@@ -7,7 +7,7 @@ function Skills() {
 				<h2>Skills</h2>
 				<hr></hr>
 				<p>
-					I'm primarily focused on full-stack web development using
+					I&rsquo;m primarily focused on full-stack web development using
 					<strong style={{ color: "#F0DB4F" }}> Javascript </strong>
 					frameworks such as
 					<strong style={{ color: "#61DAFB" }}> React </strong>
@@ -17,8 +17,8 @@ function Skills() {
 					along with
 					<strong style={{ color: "#14A506" }}> mongoDB</strong> or{" "}
 					<strong style={{ color: "#E38D1A" }}>mySQL</strong> for the backend.
-					I'm comfortable with and have prior experience in working with teams
-					adopting <strong style={{ color: "#FF76AF" }}>agile</strong>{" "}
+					I&rsquo;m comfortable with and have prior experience in working with
+					teams adopting <strong style={{ color: "#FF76AF" }}>agile</strong>{" "}
 					methodologies such as scrum.
 				</p>
 			</div>

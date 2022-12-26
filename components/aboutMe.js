@@ -7,7 +7,7 @@ function AboutMe() {
 				<h2>About Me</h2>
 				<hr></hr>
 				<p>
-					I'm an Information Systems student who is passionate on{" "}
+					I&rsquo;m an Information Systems student who is passionate on{" "}
 					<strong style={{ color: "#F068A1" }}>
 						full-stack web development
 					</strong>
