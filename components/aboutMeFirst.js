@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 function AboutMeFirst() {
 	return (
 		<motion.div className="about-me-first-container">
-			<p>I'm an Information Systems student who is passionate on...</p>
+			<p>I&apos;m an Information Systems student who is passionate on...</p>
 			<motion.h1
 				initial={{ opacity: 0 }}
 				whileInView={{ opacity: 1 }}

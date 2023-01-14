@@ -13,7 +13,7 @@ function AboutMeSecond() {
 	return (
 		<motion.div className="about-me-second-container">
 			<p>
-				I'm currently in my 3rd year of college taking up{" "}
+				I&apos;m currently in my 3rd year of college taking up{" "}
 				<b>Bachelor of Science in Information Systems</b> in{" "}
 				<b style={{ color: "#006937" }}>De La Salle University Manila.</b>
 			</p>
