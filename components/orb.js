@@ -3,6 +3,7 @@ import { MeshDistortMaterial } from "@react-three/drei";
 import React from "react";
 import { useEffect, useRef, useState } from "react";
 import { animated, useSpring } from "@react-spring/web";
+import { Router, useRouter } from "next/router";
 
 const AnimatedMeshDistortMaterial = animated(MeshDistortMaterial);
 
@@ -15,6 +16,7 @@ function Orb({ isMobile }) {
 	const dirLight = useRef();
 	const [hovered, setHovered] = useState(false);
 	const [pressed, setPressed] = useState(false);
+	const router = useRouter();
 
 	useEffect(() => {
 		document.body.style.cursor = hovered ? "pointer" : "auto";
@@ -24,7 +26,9 @@ function Orb({ isMobile }) {
 	useFrame(() => {
 		if (!isMobile) {
 			main.current.position.x = pointer.x / 4;
-			main.current.position.y = pointer.y / 4 - 0.2;
+			main.current.position.y = pointer.y / 4 - 0.4;
+		} else {
+			main.current.position.y = -0.4;
 		}
 		pointerDistance[0] = 1 - Math.abs(pointer.x);
 		pointerDistance[1] = 1 - Math.abs(pointer.y);
@@ -45,9 +49,7 @@ function Orb({ isMobile }) {
 		if (pressed) {
 			setTimeout(() => {
 				setPressed(false);
-				const element = document.querySelector("#about-me-container");
-				// smooth scroll to element and align it at the bottom
-				element?.scrollIntoView({ behavior: "smooth", block: "start" });
+				router.push("/aboutMe");
 			}, 500);
 		}
 	}, [pressed]);
@@ -94,12 +96,6 @@ function Orb({ isMobile }) {
 					/>
 				</mesh>
 			</group>
-			{/* <mesh position={[0, 0, -2]} receiveShadow>
-				<planeGeometry
-					args={[viewport.width * 1.4, viewport.height * 1.4]}
-				></planeGeometry>
-				<meshStandardMaterial color="red" />
-			</mesh> */}
 		</>
 	);
 }

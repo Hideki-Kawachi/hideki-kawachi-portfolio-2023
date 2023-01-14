@@ -1,12 +1,8 @@
 import Head from "next/head";
-import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useRef, useState } from "react";
 import React from "react";
-import { animated, useSpring } from "@react-spring/web";
-import AboutMe from "../components/aboutMe";
+import { animated, useSpring, useScroll } from "@react-spring/web";
 import StartPage from "../components/startPage";
-import NavBar from "../components/navBar";
-import Skills from "../components/skills";
 
 export default function Home() {
 	const headerSpring = useSpring({
@@ -18,6 +14,8 @@ export default function Home() {
 		from: { opacity: -100 },
 		to: { opacity: 1 },
 	});
+
+	const { scrollY } = useScroll();
 
 	const [isMobile, setIsMobile] = useState(false);
 
@@ -39,9 +37,6 @@ export default function Home() {
 				textSpring={textSpring}
 				isMobile={isMobile}
 			></StartPage>
-			<NavBar></NavBar>
-			<AboutMe></AboutMe>
-			<Skills></Skills>
 		</>
 	);
 }
