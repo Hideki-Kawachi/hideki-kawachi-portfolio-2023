@@ -65,7 +65,7 @@ function AboutMeSecondHeader() {
 					alt="background picture"
 					className="header-image"
 					fill
-					priority={true}
+					priority
 				></Image>
 			</motion.div>
 		</motion.div>
