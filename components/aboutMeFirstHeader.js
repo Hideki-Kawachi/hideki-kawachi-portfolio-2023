@@ -9,13 +9,10 @@ function AboutMeFirstHeader() {
 		offset: ["start center", "end start"],
 	});
 
-	function parallax(value, min, max) {
-		return useTransform(value, [0, 1], [min, max]);
-	}
-	const yPic = useSpring(parallax(scrollYProgress, 0, 100), {
+	const yPic = useSpring(useTransform(scrollYProgress, [0, 1], [0, 100]), {
 		duration: 0,
 	});
-	const yText = useSpring(parallax(scrollYProgress, 0, 250), {
+	const yText = useSpring(useTransform(scrollYProgress, [0, 1], [0, 250]), {
 		duration: 0,
 	});
 
