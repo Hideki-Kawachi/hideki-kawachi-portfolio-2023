@@ -29,11 +29,6 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Ron Hideki L. Kawachi Portfolio</title>
-				<link
-					rel="preload"
-					href="/dark-texture-watercolor.jpg"
-					as="image"
-				></link>
 			</Head>
 			<StartPage
 				headerSpring={headerSpring}
