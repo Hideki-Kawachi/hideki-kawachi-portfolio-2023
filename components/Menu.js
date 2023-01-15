@@ -2,19 +2,8 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
-function Menu({ isOpen }) {
+function Menu({ isOpen, setIsOpen }) {
 	const router = useRouter();
-
-	useEffect(() => {
-		let main = document.getElementsByTagName("BODY")[0];
-		if (isOpen) {
-			main.style.overflow = "hidden";
-		} else {
-			setTimeout(() => {
-				main.style.overflow = "auto";
-			}, 900);
-		}
-	}, [isOpen]);
 
 	const navVariant = {
 		hidden: {
@@ -73,7 +62,8 @@ function Menu({ isOpen }) {
 				>
 					<motion.button
 						onClick={() => {
-							router.push("/aboutMe");
+							setIsOpen(false);
+							setTimeout(() => router.push("/aboutMe"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
@@ -82,28 +72,40 @@ function Menu({ isOpen }) {
 						ABOUT ME
 					</motion.button>
 					<motion.button
-						onClick={() => router.push("/skills")}
+						onClick={() => {
+							setIsOpen(false);
+							setTimeout(() => router.push("/skills"), 900);
+						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 					>
 						SKILLS
 					</motion.button>
 					<motion.button
-						onClick={() => router.push("/projects")}
+						onClick={() => {
+							setIsOpen(false);
+							setTimeout(() => router.push("/projects"), 900);
+						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 					>
 						PROJECTS
 					</motion.button>
 					<motion.button
-						onClick={() => router.push("/experiences")}
+						onClick={() => {
+							setIsOpen(false);
+							setTimeout(() => router.push("/experiences"), 900);
+						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 					>
 						EXPERIENCES
 					</motion.button>
 					<motion.button
-						onClick={() => router.push("/contactMe")}
+						onClick={() => {
+							setIsOpen(false);
+							setTimeout(() => router.push("/contactMe"), 900);
+						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 					>

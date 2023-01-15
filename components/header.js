@@ -83,7 +83,7 @@ function Header() {
 					<div></div>
 				</motion.button>
 			</header>
-			<Menu isOpen={menuOpen}></Menu>
+			<Menu isOpen={menuOpen} setIsOpen={setMenuOpen}></Menu>
 		</>
 	);
 }

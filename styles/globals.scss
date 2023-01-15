@@ -6,6 +6,56 @@
 //TO ACCESS, use  map-get($colors-beige, 400)   //
 // Larger number = Darker shade,  Smaller number = Lighter shade  //
 
+.loading-background{
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 5s;
+}
+
+.loader {
+  width: 25vw;
+  height: 25vw;
+  display: inline-block;
+  position: absolute;
+  top: calc(50vh - 25vw);
+  left: calc(37.5vw);
+  z-index: 101;
+}
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 25vw;
+  height: 25vw;
+  border: 2px solid #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: rotation 2s ease-in-out infinite alternate;
+}
+.loader::after {
+  border-color: #FF3D00;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+@keyframes fadeIn {
+  0% { opacity: 0;}
+  50% { opacity: 0;}
+  100% {opacity: 1;}
+}
+
 $colors-beige:(
   500: #383838,
   400: #666666,
