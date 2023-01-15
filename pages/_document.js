@@ -1,5 +1,6 @@
 import { Html, Head, Main, NextScript } from "next/document";
 import React from "react";
+import Loading from "./loading";
 
 export default function Document() {
 	return (
@@ -17,6 +18,7 @@ export default function Document() {
 				<Main />
 				<NextScript />
 			</body>
+			<Loading></Loading>
 		</Html>
 	);
 }

@@ -14,6 +14,13 @@ export default function App({ Component, pageProps }) {
 		const end = () => {
 			setLoading(false);
 		};
+
+		if (typeof window !== "undefined") {
+			const loader = document.getElementById("loading-background");
+			if (loader) {
+				loader.remove();
+			}
+		}
 		Router.events.on("routeChangeStart", start);
 		Router.events.on("routeChangeComplete", end);
 		Router.events.on("routeChangeError", end);
