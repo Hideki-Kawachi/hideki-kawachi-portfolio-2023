@@ -1,15 +1,5 @@
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import Header from "../components/header";
-import Image from "next/image";
-import {
-	motion,
-	useMotionValue,
-	useMotionValueEvent,
-	useScroll,
-	useSpring,
-	useTransform,
-} from "framer-motion";
 import AboutMeFirst from "../components/aboutMeFirst";
 import AboutMeFirstHeader from "../components/aboutMeFirstHeader";
 import AboutMeSecondHeader from "../components/aboutMeSecondHeader";

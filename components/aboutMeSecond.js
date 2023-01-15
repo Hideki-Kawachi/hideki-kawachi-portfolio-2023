@@ -3,13 +3,6 @@ import React, { useEffect, useState } from "react";
 import AboutMeGridCard from "./aboutMeGridCard";
 
 function AboutMeSecond() {
-	const CGPA = 2.97;
-	const DL = 6;
-
-	const [gpa, setGPA] = useState(0);
-	const [showGPA, setShowGPA] = useState(false);
-	const [showDL, setShowDL] = useState(0);
-
 	return (
 		<motion.div className="about-me-second-container">
 			<p>

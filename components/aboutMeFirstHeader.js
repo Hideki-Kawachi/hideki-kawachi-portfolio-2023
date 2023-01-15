@@ -1,5 +1,5 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 
 function AboutMeFirstHeader() {
@@ -38,8 +38,9 @@ function AboutMeFirstHeader() {
 			},
 		},
 	};
+
 	return (
-		<motion.div className="content-header-container">
+		<div className="content-header-container">
 			<motion.span
 				variants={headerVariant}
 				initial="hidden"
@@ -64,7 +65,7 @@ function AboutMeFirstHeader() {
 					priority
 				></Image>
 			</motion.div>
-		</motion.div>
+		</div>
 	);
 }
 
