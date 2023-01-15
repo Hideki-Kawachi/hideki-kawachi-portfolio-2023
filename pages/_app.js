@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
 			setLoading(true);
 		};
 		const end = () => {
-			setLoading(true);
+			setLoading(false);
 		};
 		Router.events.on("routeChangeStart", start);
 		Router.events.on("routeChangeComplete", end);
