@@ -73,7 +73,7 @@ function Header() {
 					</defs>
 				</svg>
 				<motion.button
-					initial={{ aspectRatio: 0 / 1 }}
+					initial={{ aspectRatio: 1 / 1 }}
 					animate={{ aspectRatio: menuOpen ? 1.5 / 1 : 1 / 1 }}
 					whileHover={{ aspectRatio: 1.5 / 1 }}
 					onClick={() => setMenuOpen(!menuOpen)}
