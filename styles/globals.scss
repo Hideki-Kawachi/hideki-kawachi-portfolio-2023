@@ -132,6 +132,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    aspect-ratio: 1/1;
     gap: 10px;
     cursor: pointer;
     
@@ -337,6 +338,7 @@ nav{
     top: calc(50vh);
     text-align: center;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    opacity: 1;
   }
 
   .header-image-container{
@@ -441,22 +443,85 @@ nav{
   height: max-content;
   width: 100%;
   //background-color: map-get($colors-blue,400);
-  background-image: linear-gradient(map-get($colors-lavander,400), map-get($colors-gray,400));
+  background-image: linear-gradient(map-get($colors-gray,500), map-get($colors-blue,300));
   padding-top: 50px;
   line-height: 1.5;
+
+  .main-text-container{
+    margin-top: 5vh;
+
+    hr{
+      width: 90%;
+    }
+  }
   
   h2{
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
     color: map-get($colors-beige,100);
+    margin-left: 20px;
+    margin-bottom: 0px;
   }
   
   .content-area{
     color: map-get($colors-beige,100);
-    padding-left: 30px;
-    padding-right: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
+  }
+
+  p{
+    padding: 30px;
+    //background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,0.8));
+    margin-bottom: 0px;
+  }
+
+  .skills-list-main-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .skills-list-container{
+    border: 1px dashed white;
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(14, 14, 14, 1);
+    height: max-content;
+    padding-bottom: 40px;
+    width: 90%;
+    gap: 30px;
+
+    h3{
+      font-family: 'Michroma', sans-serif;
+    }
+  }
+
+  .skills-card-container{
+  min-width: 80%;
+
+    .level-container{
+      background-color:rgb(82, 82, 82);
+      border-radius: 10px;
+      width: 100%;  
+    }
+
+    hr{
+      height: 10px;
+      // background-color: red;
+      border-radius: 0px 10px 10px 0px;
+      position: relative;
+      left: 0px;
+      margin: 0px;
+      margin-bottom: 5px;
+    }
   }
 
   .main-image-container{
@@ -525,3 +590,77 @@ nav{
 }
 
 
+@media (min-width: 767px) {
+  #about-me-container{
+    .about-me-first-container{
+      p{
+        font-size: 1.5rem;
+      }
+
+      h1{
+        font-size: 3rem;
+      }
+    }
+
+    .about-me-second-container{
+      p{
+        font-size: 1.5rem;
+      }
+
+      h1{
+        font-size: 3rem;
+      }
+
+      .grid-container{
+        margin-top: 50px;
+        gap: 5vw;
+
+        .grid-card-container{
+          height: 20rem;
+          .highlight-text{
+            font-size: 5rem;
+          }
+          span{
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+    .content-header-container{
+      margin-top: -6.3rem;
+      span{
+        font-size: 5rem;
+      }
+    }
+  }
+
+  #skills-container{
+
+    .main-text-container{
+      h2{
+        text-align: center;
+        margin: 0px;
+      }
+
+      p{
+        font-size: 1.5rem;
+        padding: 30px 10vw 30px 10vw;
+      }
+    }
+
+    .skills-list-main-container{
+      flex-direction: row;
+      justify-content: center;
+      align-items: normal;
+      gap: 5vw;
+    }
+
+    .skills-list-container{
+      width: 40vw;
+      font-size: 1.5rem;
+
+    }
+
+  }
+  
+}

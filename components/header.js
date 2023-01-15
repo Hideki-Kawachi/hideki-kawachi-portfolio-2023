@@ -5,20 +5,14 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 
 function Header() {
-	const [menuHover, setMenuHover] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
-
-	useEffect(() => {
-		console.log("HOVERING???:", menuHover);
-	}, [menuHover]);
 
 	const router = useRouter();
 
 	return (
 		<>
 			<header>
-				<motion.svg
-					whileHover={{ scale: 1.1 }}
+				<svg
 					width="65"
 					height="65"
 					viewBox="0 0 65 65"
@@ -77,7 +71,7 @@ function Header() {
 							/>
 						</filter>
 					</defs>
-				</motion.svg>
+				</svg>
 				<motion.button
 					initial={{ aspectRatio: 0 / 1 }}
 					animate={{ aspectRatio: menuOpen ? 1.5 / 1 : 1 / 1 }}

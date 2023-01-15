@@ -15,8 +15,6 @@ export default function Home() {
 		to: { opacity: 1 },
 	});
 
-	const { scrollY } = useScroll();
-
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {

@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 function Menu({ isOpen }) {
 	const router = useRouter();
@@ -12,7 +12,7 @@ function Menu({ isOpen }) {
 		} else {
 			setTimeout(() => {
 				main.style.overflow = "auto";
-			}, 1300);
+			}, 900);
 		}
 	}, [isOpen]);
 
@@ -21,18 +21,18 @@ function Menu({ isOpen }) {
 			height: "0px",
 			transition: {
 				when: "afterChildren",
-				staggerChildren: 0.2,
+				staggerChildren: 0.1,
 				ease: "easeInOut",
-				duration: 0.5,
+				duration: 0.25,
 			},
 		},
 		visible: {
 			height: "95vh",
 			transition: {
 				when: "beforeChildren",
-				staggerChildren: 0.3,
+				staggerChildren: 0.2,
 				ease: "easeInOut",
-				duration: 1,
+				duration: 0.5,
 			},
 		},
 	};
@@ -43,7 +43,7 @@ function Menu({ isOpen }) {
 			opacity: 0,
 			transition: {
 				ease: "easeOut",
-				duration: 0.5,
+				duration: 0.2,
 			},
 		},
 		visible: {
@@ -51,7 +51,7 @@ function Menu({ isOpen }) {
 			opacity: 1,
 			transition: {
 				ease: "easeOut",
-				duration: 0.5,
+				duration: 0.3,
 			},
 		},
 	};
@@ -72,7 +72,9 @@ function Menu({ isOpen }) {
 					exit="hidden"
 				>
 					<motion.button
-						onClick={() => router.push("/aboutMe")}
+						onClick={() => {
+							router.push("/aboutMe");
+						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 						style={{ marginTop: "60px" }}

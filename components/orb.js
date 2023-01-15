@@ -33,7 +33,7 @@ function Orb({ isMobile }) {
 		pointerDistance[0] = 1 - Math.abs(pointer.x);
 		pointerDistance[1] = 1 - Math.abs(pointer.y);
 
-		let speed = ((pointerDistance[0] + pointerDistance[1]) / 500) * 10;
+		let speed = ((pointerDistance[0] + pointerDistance[1]) / 1000) * 10;
 		sphere.current.rotation.x += 0.003 + speed;
 		sphere.current.rotation.y += 0.003 + speed;
 		sphere.current.rotation.z += 0.002 + speed;
