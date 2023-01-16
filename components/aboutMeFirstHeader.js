@@ -58,11 +58,11 @@ function AboutMeFirstHeader() {
 				style={{ y: yPic }}
 			>
 				<Image
-					src="/aboutMePic5.jpg"
+					src="/aboutMePic6.jpg"
 					alt="background picture"
 					className="header-image"
 					fill
-					priority
+					priority={true}
 				></Image>
 			</motion.div>
 		</div>

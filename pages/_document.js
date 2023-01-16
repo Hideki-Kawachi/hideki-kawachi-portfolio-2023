@@ -18,6 +18,7 @@ export default function Document() {
 					href="/dark-texture-watercolor.jpg"
 					as="image"
 				></link>
+				<link rel="preload" href="/aboutMePic6.jpg" as="image"></link>
 			</Head>
 			<body>
 				<Main />
