@@ -51,7 +51,7 @@ function Orb({ isMobile, setStart }) {
 			setTimeout(() => {
 				setPressed(false);
 				router.push("/aboutMe");
-			}, 2000);
+			}, 1300);
 		}
 	}, [pressed]);
 

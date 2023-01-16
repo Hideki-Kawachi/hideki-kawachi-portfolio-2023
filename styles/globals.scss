@@ -6,6 +6,21 @@
 //TO ACCESS, use  map-get($colors-beige, 400)   //
 // Larger number = Darker shade,  Smaller number = Lighter shade  //
 
+#main-transition-container{
+   background-color: rgba(0, 0, 0, 1);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  &.enter{
+    animation: fadeIn 1s ease-in forwards;
+  }
+  &.leave{
+    animation: fadeOut 0.2s ease-out forwards;
+  }
+}
+
+
 #loading-background{
   z-index: 100;
   background-color: rgba(0, 0, 0, 0.8);
@@ -51,8 +66,12 @@
 } 
 
 @keyframes fadeIn {
+  0% { opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
   0% { opacity: 0;}
-  50% { opacity: 0;}
   100% {opacity: 1;}
 }
 
