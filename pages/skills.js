@@ -30,7 +30,10 @@ function Skills() {
 							<br></br>
 							I&rsquo;ve also been studying and trying out new technologies such
 							as <b>Framer Motion</b>, <b>Three.js</b>, and <b>React Spring</b>{" "}
-							for website animations.
+							for website animations. Along with this, I have experience in
+							using <b>Figma </b>
+							for making prototypes and <b>Lucidchart</b> for creating BPMN 2.0
+							diagrams.
 						</p>
 					</div>
 					<div className="skills-list-main-container">
