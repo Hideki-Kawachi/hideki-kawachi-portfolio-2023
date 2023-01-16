@@ -7,7 +7,7 @@ import { Router, useRouter } from "next/router";
 
 const AnimatedMeshDistortMaterial = animated(MeshDistortMaterial);
 
-function Orb({ isMobile }) {
+function Orb({ isMobile, setStart }) {
 	const sphere = useRef();
 	const { pointer } = useThree();
 	const pointerDistance = [];
@@ -47,10 +47,11 @@ function Orb({ isMobile }) {
 
 	useEffect(() => {
 		if (pressed) {
+			setStart(true);
 			setTimeout(() => {
 				setPressed(false);
 				router.push("/aboutMe");
-			}, 500);
+			}, 2000);
 		}
 	}, [pressed]);
 

@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { animated, useChain, useSpring, useSpringRef } from "@react-spring/web";
 import Orb from "../components/orb";
 import { Canvas } from "@react-three/fiber";
 
 function StartPage({ headerSpring, textSpring, isMobile }) {
+	const [start, setStart] = useState(false);
+
 	const div1Ref = useSpringRef();
 	const div1 = useSpring({
 		ref: div1Ref,
 		from: { width: "0vw" },
 		to: { width: "65vw" },
+		reverse: start,
 	});
 
 	const div2Ref = useSpringRef();
@@ -16,6 +19,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 		ref: div2Ref,
 		from: { width: "0vw" },
 		to: { width: "50vw" },
+		reverse: start,
 	});
 
 	const div3Ref = useSpringRef();
@@ -23,6 +27,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 		ref: div3Ref,
 		from: { width: "0vw" },
 		to: { width: "30vw" },
+		reverse: start,
 	});
 
 	const bigRef = useSpringRef();
@@ -30,6 +35,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 		ref: bigRef,
 		from: { width: "0vw" },
 		to: { width: "45vw" },
+		reverse: start,
 	});
 
 	const medRef = useSpringRef();
@@ -37,6 +43,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 		ref: medRef,
 		from: { width: "0vw" },
 		to: { width: "35vw" },
+		reverse: start,
 	});
 
 	const smallRef = useSpringRef();
@@ -44,6 +51,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 		ref: smallRef,
 		from: { width: "0vw" },
 		to: { width: "25vw" },
+		reverse: start,
 	});
 
 	const div7Ref = useSpringRef();
@@ -51,6 +59,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 		ref: div7Ref,
 		from: { width: "0vw" },
 		to: { width: "25vw" },
+		reverse: start,
 	});
 
 	const div8Ref = useSpringRef();
@@ -58,6 +67,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 		ref: div8Ref,
 		from: { width: "0vw" },
 		to: { width: "40vw" },
+		reverse: start,
 	});
 
 	useChain([bigRef, medRef, smallRef], [0, 0.7, 1], 1000);
@@ -85,7 +95,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 				<span>Click Here</span>
 			</animated.div>
 			<Canvas shadows className="orb-main-container">
-				<Orb isMobile={isMobile}></Orb>
+				<Orb isMobile={isMobile} setStart={setStart}></Orb>
 			</Canvas>
 		</section>
 	);
