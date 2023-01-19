@@ -7,7 +7,7 @@ function Menu({ isOpen, setIsOpen }) {
 
 	const navVariant = {
 		hidden: {
-			height: "0px",
+			height: "0vh",
 			transition: {
 				when: "afterChildren",
 				staggerChildren: 0.1,
@@ -63,51 +63,56 @@ function Menu({ isOpen, setIsOpen }) {
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/aboutMe"), 900);
+							setTimeout(() => router.push("/aboutMe"), 1000);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 						style={{ marginTop: "60px" }}
+						key={"aboutMe"}
 					>
 						ABOUT ME
 					</motion.button>
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/skills"), 900);
+							setTimeout(() => router.push("/skills"), 1000);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
+						key={"skills"}
 					>
 						SKILLS
 					</motion.button>
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/projects"), 900);
+							setTimeout(() => router.push("/projects"), 1000);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
+						key={"projects"}
 					>
 						PROJECTS
 					</motion.button>
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/experiences"), 900);
+							setTimeout(() => router.push("/experiences"), 1000);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
+						key={"experiences"}
 					>
 						EXPERIENCES
 					</motion.button>
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/contactMe"), 900);
+							setTimeout(() => router.push("/contactMe"), 1000);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
+						key={"contactMe"}
 					>
 						CONTACT ME
 					</motion.button>

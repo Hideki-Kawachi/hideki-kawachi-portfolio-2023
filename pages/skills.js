@@ -43,16 +43,19 @@ function Skills() {
 								level={"90%"}
 								color={"#F0DB4F"}
 								caption={"Javascript"}
+								key={1}
 							></SkillsCard>
 							<SkillsCard
 								level={"80%"}
 								color={"#61DAFB"}
 								caption={"React"}
+								key={2}
 							></SkillsCard>
 							<SkillsCard
 								level={"90%"}
 								color={"#E4E4E4"}
 								caption={"Next.js"}
+								key={3}
 							></SkillsCard>
 						</div>
 						<div className="skills-list-container">
@@ -61,21 +64,25 @@ function Skills() {
 								level={"90%"}
 								color={"#F0DB4F"}
 								caption={"Javascript"}
+								key={4}
 							></SkillsCard>
 							<SkillsCard
 								level={"75%"}
 								color={"#8CC84B"}
 								caption={"Express"}
+								key={5}
 							></SkillsCard>
 							<SkillsCard
 								level={"85%"}
 								color={"#14A506"}
 								caption={"MongoDB"}
+								key={6}
 							></SkillsCard>
 							<SkillsCard
 								level={"70%"}
 								color={"#E38D1A"}
 								caption={"MySQL"}
+								key={7}
 							></SkillsCard>
 						</div>
 					</div>

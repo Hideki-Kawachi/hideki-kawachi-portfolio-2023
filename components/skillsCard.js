@@ -9,6 +9,7 @@ function SkillsCard({ level, color, caption }) {
 					style={{ backgroundColor: color }}
 					whileInView={{ width: level }}
 					initial={{ width: "0px" }}
+					exit={{ width: "0px" }}
 					transition={{ ease: "easeOut", duration: 1 }}
 				></motion.hr>
 			</div>

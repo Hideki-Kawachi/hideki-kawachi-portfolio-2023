@@ -1,15 +1,16 @@
 import React from "react";
+import Header from "../components/header";
 
 function Projects() {
 	return (
-		<section id="projects-container" className="main-container">
-			<div className="content-area">
-				<div className="main-text-area">
-					<h2>Projects</h2>
-					<hr></hr>
+		<>
+			<Header></Header>
+			<section id="projects-container" className="main-container">
+				<div className="content-area">
+					<h1>PROJECTS</h1>
 				</div>
-			</div>
-		</section>
+			</section>
+		</>
 	);
 }
 

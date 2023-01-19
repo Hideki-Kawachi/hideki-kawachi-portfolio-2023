@@ -3,12 +3,14 @@ import { useEffect, useRef, useState } from "react";
 import React from "react";
 import { animated, useSpring, useScroll } from "@react-spring/web";
 import StartPage from "../components/startPage";
+import { Router, useRouter } from "next/router";
 
 export default function Home() {
 	const headerSpring = useSpring({
 		from: { y: -50, opacity: 0 },
 		to: { y: 0, opacity: 1 },
 	});
+	const router = useRouter();
 
 	const textSpring = useSpring({
 		from: { opacity: -100 },
@@ -23,6 +25,7 @@ export default function Home() {
 		} else {
 			setIsMobile(false);
 		}
+		router.prefetch("/aboutMe");
 	}, []);
 
 	return (

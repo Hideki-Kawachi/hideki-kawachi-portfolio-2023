@@ -644,8 +644,10 @@ nav{
   padding-top: 50px;
   line-height: 1.5;
   
-  h2{
+  h1{
     color: map-get($colors-beige,100);
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
   }
   
   .content-area{
