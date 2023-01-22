@@ -47,7 +47,6 @@ function Menu({ isOpen, setIsOpen }) {
 
 	const hoverButton = {
 		scale: 1.1,
-		textDecoration: "underline",
 	};
 
 	return (
@@ -63,7 +62,7 @@ function Menu({ isOpen, setIsOpen }) {
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/aboutMe"), 1000);
+							setTimeout(() => router.push("/aboutMe"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
@@ -75,7 +74,7 @@ function Menu({ isOpen, setIsOpen }) {
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/skills"), 1000);
+							setTimeout(() => router.push("/skills"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
@@ -86,7 +85,7 @@ function Menu({ isOpen, setIsOpen }) {
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/projects"), 1000);
+							setTimeout(() => router.push("/projects"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
@@ -97,7 +96,7 @@ function Menu({ isOpen, setIsOpen }) {
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/experiences"), 1000);
+							setTimeout(() => router.push("/experiences"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
@@ -108,7 +107,7 @@ function Menu({ isOpen, setIsOpen }) {
 					<motion.button
 						onClick={() => {
 							setIsOpen(false);
-							setTimeout(() => router.push("/contactMe"), 1000);
+							setTimeout(() => router.push("/contactMe"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}

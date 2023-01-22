@@ -13,12 +13,6 @@ export default function Document() {
 					href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@200;400;600;800&family=Righteous&display=swap"
 					rel="stylesheet"
 				/>
-				<link
-					rel="preload"
-					href="/dark-texture-watercolor.jpg"
-					as="image"
-				></link>
-				<link rel="preload" href="/aboutMePic6.jpg" as="image"></link>
 			</Head>
 			<body>
 				<Main />

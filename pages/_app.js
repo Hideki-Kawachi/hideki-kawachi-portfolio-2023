@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
 			setIsLeaving(false);
 			setTimeout(() => {
 				setTransitionShow(false);
-			}, 1000);
+			}, 1300);
 		};
 
 		Router.events.on("routeChangeStart", leaving);
