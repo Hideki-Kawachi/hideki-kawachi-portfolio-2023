@@ -21,7 +21,7 @@ function ProjectCard({
 				onClick={() => window.open(demo, "_blank")}
 			>
 				<div className="project-card-image-container">
-					<Image src={image} fill alt={title}></Image>
+					<Image src={image} fill alt={title} priority={true}></Image>
 				</div>
 				<svg
 					width="30"
