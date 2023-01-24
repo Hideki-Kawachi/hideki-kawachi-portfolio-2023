@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { animate, motion } from "framer-motion";
 
 function ProjectCard({
 	image,
@@ -14,15 +15,25 @@ function ProjectCard({
 	return (
 		<div
 			className="project-card-main-container"
-			style={{ backgroundColor: bgColor + "B3" }}
+			style={{ backgroundColor: bgColor + "CC" }}
 		>
-			<div
+			<motion.div
 				className="project-card-header-container"
 				onClick={() => window.open(demo, "_blank")}
+				whileInView={{ opacity: 1 }}
+				initial={{ opacity: 0 }}
+				viewport={{ once: true }}
+				transition={{ duration: 0.5, ease: "easeInOut" }}
 			>
-				<div className="project-card-image-container">
+				<motion.div
+					className="project-card-image-container"
+					whileHover={{
+						scale: 1.01,
+						transition: { duration: 0.2 },
+					}}
+				>
 					<Image src={image} fill alt={title} priority={true}></Image>
-				</div>
+				</motion.div>
 				<svg
 					width="30"
 					height="30"
@@ -38,7 +49,7 @@ function ProjectCard({
 						strokeLinejoin="round"
 					/>
 				</svg>
-			</div>
+			</motion.div>
 			<h2>{title}</h2>
 			<p>{description}</p>
 			<Link href={link} style={{ color: linkColor }}>

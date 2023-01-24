@@ -621,9 +621,18 @@ nav{
 
 #projects-container{
   min-height: 100vh;
-  background-image: linear-gradient(map-get($colors-beige,500), map-get($colors-gray,500) );
+  //background-image: linear-gradient(map-get($colors-beige,500), map-get($colors-gray,500) );
+  background-color: rgb(34, 34, 34);
   padding-top: 50px;
   line-height: 1.5;
+
+  &.main-container{
+    &::before{
+      background-image: url(../public/tile1.svg);
+      background-repeat: repeat;
+      background-size: 10vw;
+    }
+  }
   
   h1{
     color: map-get($colors-beige,100);
@@ -631,6 +640,8 @@ nav{
     font-size: 3rem;
     margin-top: 50px;
     text-align: center;
+    text-shadow: -4px 4px 0px rgba(255, 255, 255, 0.25);
+    // letter-spacing: 10px;
   }
   
   .content-area{
@@ -712,7 +723,34 @@ nav{
     margin-right: 10px;
     margin-bottom: 30px;
     font-size: 1rem;
+    text-decoration: none;
+
+    &:hover{
+      animation: scaleUp 40ms ease-in forwards;
+    }
   }
+}
+
+#projects-page-container{
+  // min-height: 100vh;
+  // //background-image: linear-gradient(map-get($colors-beige,500), map-get($colors-gray,500) );
+  // background-color: rgb(34, 34, 34);
+  // padding-top: 50px;
+  // line-height: 1.5;
+
+  // &.main-container{
+  //   &::before{
+  //     background-image: url(../public/tile1.svg);
+  //     background-repeat: repeat;
+  //     background-size: 10vw;
+  //   }
+  // }
+
+}
+
+@keyframes scaleUp {
+  0% {text-decoration: none;transform: scale(1);}
+  100%{text-decoration:underline;transform: scale(1.05);}
 }
 
 #contact-me-container{
@@ -801,11 +839,19 @@ nav{
 
   #projects-container{
 
+    &.main-container{
+      &::before{
+        background-size: 4vw;
+      }
+    }
+
+
     .project-card-main-container{
       align-items: center;
 
       h2{
         font-size: 2rem;
+        margin: 10px 0px 10px 0px;
       }
 
       p{
@@ -814,8 +860,8 @@ nav{
       }
 
       a{
-        margin-top: 20px;
-        margin-bottom: 100px;
+        margin-top: 10px;
+        margin-bottom: 80px;
         margin-right: 18vw;
         font-size: 1.5rem;
       }
@@ -827,8 +873,8 @@ nav{
       svg{
         width: 3.5vw;
         height: 3.5vw;
-        margin-top: calc(25vw);
-        right: calc(19vw);
+        margin-top: 25vw;
+        right: 19vw;
       }
     }
 

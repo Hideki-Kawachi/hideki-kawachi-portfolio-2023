@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../components/header";
-import ProjectCard from "../components/projectCard";
+import Header from "../../components/header";
+import ProjectCard from "../../components/projectCard";
 
 function Projects() {
 	return (
@@ -18,7 +18,7 @@ function Projects() {
 							}
 							link={"/projects/milaor"}
 							linkColor={"#0094FF"}
-							bgColor={"#33363F"}
+							bgColor={"#485D70"}
 							demo={"https://milaor-inventory-system.vercel.app/"}
 						></ProjectCard>
 						<ProjectCard

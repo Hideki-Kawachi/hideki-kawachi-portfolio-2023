@@ -11,11 +11,6 @@ export default function App({ Component, pageProps }) {
 	const [isLeaving, setIsLeaving] = useState(false);
 
 	useEffect(() => {
-		// let element = document.getElementById("main-transition-container");
-		// if (!element) {
-		// 	setTransitionShow(true);
-		// }
-
 		const leaving = () => {
 			setTransitionShow(true);
 			setIsLeaving(true);
