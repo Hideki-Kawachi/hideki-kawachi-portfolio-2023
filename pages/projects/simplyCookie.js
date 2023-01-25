@@ -94,7 +94,7 @@ function SimplyCookie() {
 							The goal of this project was to closely work with the client on
 							the design and the features to be implemented in the website. The
 							resulting website should match the overall aesthetic and feel of
-							the client's brand.
+							the client&apos;s brand.
 						</p>
 						<h2>System Features:</h2>
 						<ul>
