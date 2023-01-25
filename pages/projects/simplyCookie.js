@@ -5,7 +5,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import Header from "../../components/header";
 
-function Milaor() {
+function SimplyCookie() {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -17,13 +17,12 @@ function Milaor() {
 	}, []);
 
 	const router = useRouter();
-
 	return (
 		<>
 			<Header></Header>
 			<section id="projects-page-container" className="main-container">
 				<div className="content-area">
-					<div className="project-content-container" id="milaor">
+					<div className="project-content-container" id="simply-cookie">
 						{isMobile ? (
 							<button
 								className="back-button"
@@ -53,12 +52,7 @@ function Milaor() {
 
 						<motion.div
 							className="project-card-header-container"
-							onClick={() =>
-								window.open(
-									"https://milaor-inventory-system.vercel.app/",
-									"_blank"
-								)
-							}
+							onClick={() => window.open("https://simply-cookie.vercel.app/")}
 							whileInView={{ opacity: 1 }}
 							initial={{ opacity: 0 }}
 							viewport={{ once: true }}
@@ -72,9 +66,9 @@ function Milaor() {
 								}}
 							>
 								<Image
-									src={"/milaor-inventory-system-landscape.png"}
+									src={"/simply-cookie-preview-landscape.png"}
 									fill
-									alt={"Milaor Inventory System"}
+									alt={"Simply Cookie E-Commerce Platform"}
 									priority={true}
 								></Image>
 							</motion.div>
@@ -94,45 +88,30 @@ function Milaor() {
 								/>
 							</svg>
 						</motion.div>
-						<h1>Milaor Inventory System</h1>
+						<h1>Simply Cookie E-Commerce Platform</h1>
 						<h2>Project Goal:</h2>
 						<p>
-							The main goal of this project was to analyze and identify the
-							present within the client&apos;s internal processes and systems
-							and provide solutions.
+							The goal of this project was to closely work with the client on
+							the design and the features to be implemented in the website. The
+							resulting website should match the overall aesthetic and feel of
+							the client's brand.
 						</p>
-						<h2>Issues Identified:</h2>
-						<ul>
-							<li>
-								Inefficient monitoring system to accurately identify spare part
-								items that are almost out of stock causing unnecessary expenses.
-							</li>
-							<li>
-								Unstandardized recording of item inflow and outflow causes
-								mismatched records in their reports.
-							</li>
-						</ul>
 						<h2>System Features:</h2>
 						<ul>
-							<li>
-								Dashboard presents important information such as inventory
-								in-flow and out-flow as well as the items that need to be
-								restocked.
-							</li>
-							<li>User management and authorization</li>
-							<li>
-								Systematic documentation of vehicle details and their repairs
-								and maintenance
-							</li>
-							<li>Standardized item recording</li>
-							<li>Inventory and audit report generation</li>
+							<li>Image Carousel</li>
+							<li>Modularized Item Menu</li>
+							<li>Online order accepting and scheduling</li>
+							<li>Proof of payment acceptance</li>
 						</ul>
 						<h2>Technologies Used:</h2>
 						<ul style={{ marginBottom: "15vh" }}>
 							<li>Next.js</li>
+							<li>Tailwind CSS</li>
 							<li>SCSS</li>
+							<li>Framer Motion</li>
+							<li>Lottie Animation</li>
 							<li>MongoDB</li>
-							<li>Iron-session</li>
+							<li>Cloudinary</li>
 						</ul>
 					</div>
 				</div>
@@ -141,4 +120,4 @@ function Milaor() {
 	);
 }
 
-export default Milaor;
+export default SimplyCookie;

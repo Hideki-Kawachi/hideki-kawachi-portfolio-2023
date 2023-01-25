@@ -27,7 +27,7 @@ function Projects() {
 							description={
 								"A website built to provide the client their own platform on which they can accept online orders and showcase their cookies..."
 							}
-							link={"/projects/simply-cookie"}
+							link={"/projects/simplyCookie"}
 							linkColor={"#FFB800"}
 							bgColor={"#885733"}
 							demo={"https://simply-cookie.vercel.app/"}
