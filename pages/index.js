@@ -20,7 +20,7 @@ export default function Home() {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
-		if (window.matchMedia("(max-width: 767px)").matches) {
+		if (window.matchMedia("(max-width: 820px)").matches) {
 			setIsMobile(true);
 		} else {
 			setIsMobile(false);

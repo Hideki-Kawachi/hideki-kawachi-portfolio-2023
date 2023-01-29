@@ -66,7 +66,6 @@ function Menu({ isOpen, setIsOpen }) {
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
-						style={{ marginTop: "60px" }}
 						key={"aboutMe"}
 					>
 						ABOUT ME

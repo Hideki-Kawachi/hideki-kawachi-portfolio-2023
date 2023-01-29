@@ -12,7 +12,7 @@ function Header() {
 	return (
 		<>
 			<header>
-				<svg
+				<motion.svg
 					width="65"
 					height="65"
 					viewBox="0 0 65 65"
@@ -20,6 +20,7 @@ function Header() {
 					xmlns="http://www.w3.org/2000/svg"
 					className="RHK-logo"
 					onClick={() => router.push("/")}
+					whileHover={{ scale: 1.1 }}
 				>
 					<g filter="url(#filter0_d_335_14)">
 						<path
@@ -71,7 +72,7 @@ function Header() {
 							/>
 						</filter>
 					</defs>
-				</svg>
+				</motion.svg>
 				<motion.button
 					initial={{ aspectRatio: 1 / 1 }}
 					animate={{ aspectRatio: menuOpen ? 1.5 / 1 : 1 / 1 }}

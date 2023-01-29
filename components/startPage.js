@@ -92,7 +92,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 				<span>Full-Stack Web Developer</span>
 			</animated.div>
 			<animated.div className="orb-text-container" style={{ ...textSpring }}>
-				<span>Click Here</span>
+				<span>Start Exploring</span>
 			</animated.div>
 			<Canvas shadows className="orb-main-container">
 				<Orb isMobile={isMobile} setStart={setStart}></Orb>

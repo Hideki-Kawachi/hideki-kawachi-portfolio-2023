@@ -9,7 +9,7 @@ function Milaor() {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
-		if (window.matchMedia("(max-width: 767px)").matches) {
+		if (window.matchMedia("(max-width: 820px)").matches) {
 			setIsMobile(true);
 		} else {
 			setIsMobile(false);
@@ -99,6 +99,7 @@ function Milaor() {
 							whileHover={{ scale: 1.05 }}
 							className="github-link"
 							href="https://github.com/Hideki-Kawachi/itisdev-mp/tree/demo"
+							target="_blank"
 						>
 							GitHub Repository
 						</motion.a>
