@@ -58,7 +58,7 @@ function AboutMeFirstHeader() {
 				style={{ y: yPic }}
 			>
 				<Image
-					src="/aboutMePic5-min.jpg"
+					src="/aboutMePic5-comp.jpg"
 					alt="background picture"
 					className="header-image"
 					fill
