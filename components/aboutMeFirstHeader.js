@@ -39,6 +39,11 @@ function AboutMeFirstHeader() {
 		},
 	};
 
+	// useEffect(() => {
+	// 	sessionStorage.setItem("loading", "true");
+	// 	console.log("SET SESSION STORAGE TO:", sessionStorage.getItem("loading"));
+	// }, []);
+
 	return (
 		<div className="content-header-container">
 			<motion.span
@@ -58,6 +63,10 @@ function AboutMeFirstHeader() {
 				style={{ y: yPic }}
 			>
 				<Image
+					// onLoadingComplete={() => {
+					// 	sessionStorage.removeItem("loading");
+					// 	console.log("LOADED");
+					// }}
 					src="/aboutMePic5-comp.jpg"
 					alt="background picture"
 					className="header-image"

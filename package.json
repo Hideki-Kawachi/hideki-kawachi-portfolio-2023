@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@next/font": "13.0.7",
+    "@react-hooks-library/core": "^0.5.1",
     "@react-spring/parallax": "^9.6.1",
     "@react-spring/web": "^9.6.1",
     "@react-three/drei": "^9.48.1",

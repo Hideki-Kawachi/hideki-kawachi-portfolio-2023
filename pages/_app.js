@@ -6,7 +6,6 @@ import "../styles/globals.scss";
 import Loading from "./loading";
 
 export default function App({ Component, pageProps }) {
-	const [loading, setLoading] = useState(false);
 	const [transitionShow, setTransitionShow] = useState(true);
 	const [isLeaving, setIsLeaving] = useState(false);
 
