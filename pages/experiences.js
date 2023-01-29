@@ -1,8 +1,6 @@
 import React from "react";
 import Header from "../components/header";
-import Image from "next/image";
 import ExperienceCard from "../components/experienceCard";
-import { AnimatePresence, motion } from "framer-motion";
 
 function Experiences() {
 	const delay = 0.4;

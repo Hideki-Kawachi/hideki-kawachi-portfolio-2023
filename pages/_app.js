@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import Transition from "../components/transition";
 import "../styles/globals.scss";
-import Loading from "./loading";
 
 export default function App({ Component, pageProps }) {
 	const [transitionShow, setTransitionShow] = useState(true);

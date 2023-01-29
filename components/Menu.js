@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 function Menu({ isOpen, setIsOpen }) {
 	const router = useRouter();
