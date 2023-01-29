@@ -207,6 +207,7 @@ nav{
   top: calc(5vh + 20px);
   left: 0px;
   z-index: 49;
+  align-items: center;
 
 
   button{
@@ -215,6 +216,7 @@ nav{
     background-color: transparent;
     border: 0px;
     color: map-get($colors-beige, 100 );
+    width: fit-content;
     cursor: pointer;
   }
 }
@@ -223,6 +225,7 @@ nav{
 
   button:hover{
     text-decoration: underline;
+    
   }
 }
 
@@ -388,7 +391,7 @@ nav{
     position: relative;
     top: calc(50vh);
     text-align: center;
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
+    text-shadow: -4px 4px 0px rgba(150, 150, 150, 0.25);
     opacity: 1;
   }
 
@@ -409,8 +412,6 @@ nav{
 
 
 #about-me-container{
-  //background-image: radial-gradient(189.06% 100% at 65.64% 0%, #6A85A0 0%, #485D70 16%, #666666 45.17%, #858585 71.33%, #E4E4E4 98.98%);
-
 
   .content-area{
     color: map-get($colors-beige,100);
@@ -494,7 +495,7 @@ nav{
   height: max-content;
   width: 100%;
   background-image: linear-gradient(map-get($colors-gray,500), map-get($colors-beige,500) ,map-get($colors-beige,200));
-  padding-top: 60px;
+  padding-top: calc(5vh + 10px);
   line-height: 1.5;
 
   .main-text-container{
@@ -505,12 +506,14 @@ nav{
     }
   }
   
-  h2{
+  h1{
     font-family: 'Righteous', cursive;
     font-size: 3rem;
     color: map-get($colors-beige,100);
-    margin-left: 20px;
+    align-items: center;
     margin-bottom: 0px;
+    text-align: center;
+    text-shadow: -4px 4px 0px rgba(150, 150, 150, 0.25);
   }
   
   .content-area{
@@ -621,9 +624,8 @@ nav{
 
 #projects-container{
   min-height: 100vh;
-  //background-image: linear-gradient(map-get($colors-beige,500), map-get($colors-gray,500) );
   background-color: rgb(34, 34, 34);
-  padding-top: 60px;
+  padding-top: calc(5vh + 10px);
   line-height: 1.5;
 
   &.main-container{
@@ -640,7 +642,7 @@ nav{
     font-size: 3rem;
     margin-top: 50px;
     text-align: center;
-    text-shadow: -4px 4px 0px rgba(255, 255, 255, 0.25);
+    text-shadow: -4px 4px 0px rgba(150, 150, 150, 0.25);
     // letter-spacing: 10px;
   }
   
@@ -734,7 +736,7 @@ nav{
 #projects-page-container{
   height: 100%;
   background-image: linear-gradient(map-get($colors-beige,500), map-get($colors-gray,500) );
-  padding-top: 60px;
+  padding-top: calc(5vh + 10px);
   line-height: 1.5;
 
   &.main-container{
@@ -773,6 +775,7 @@ nav{
     text-align: center;
     font-weight: 600;
     margin-top: 10px;
+    margin-bottom: 0px;
   }
 
   h2{
@@ -798,7 +801,6 @@ nav{
     height: fit-content;
     display: flex;
     flex-direction: column;
-    align-items: center;
 
     &#milaor{
     background-color: #485D70CC;
@@ -809,10 +811,100 @@ nav{
     }
 }
 
+.github-link{
+  font-size: 1rem;
+  text-decoration: underline;
+  width: max-content;
+  align-self: center;
+  cursor: pointer;
+}
+
 @keyframes scaleUp {
   0% {text-decoration: none;transform: scale(1);}
   100%{text-decoration:underline;transform: scale(1.05);}
 }
+
+#experiences-container{
+  background-image: url(../public/Topography.svg);
+  background-size: cover;
+  padding-top: calc(5vh + 10px);
+
+  .content-area{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1{
+    color: map-get($colors-beige,100);
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    margin-top: 50px;
+    text-align: center;
+    text-shadow: -4px 4px 0px rgba(150, 150, 150, 0.25);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: fit-content;
+    padding: 5px;
+  }
+}
+
+.experience-list-container{
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  //background-color: aqua;
+}
+
+.experience-card-main-container{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.8);
+  gap: 10px;
+  padding: 10px;
+
+  .experience-card-image-container{
+    min-width: 20vw;
+    height: 100%;
+    aspect-ratio: 1/1;
+    position: relative;
+    
+    img{
+      margin-top: 5px;
+      object-fit: contain;
+    }
+  }
+
+  .experience-card-text-container{
+    width: 100%;
+    margin-right: 20px;
+  }
+  
+  h2{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0px;
+    
+  }
+
+  .position-duration{
+    font-size: 0.8rem;
+    color: map-get($colors-beige, 400 );
+  }
+
+  span{
+    font-size: 1rem;
+    font-weight: 600;
+    color: map-get($colors-gray, 500 );
+  }
+}
+
 
 #contact-me-container{
   .content-area{
@@ -870,7 +962,7 @@ nav{
   #skills-container{
 
     .main-text-container{
-      h2{
+      h1{
         text-align: center;
         margin: 0px;
       }
@@ -941,6 +1033,10 @@ nav{
 
   }
 
+  .github-link{
+    font-size: 1.3rem;
+  }
+
   #projects-page-container{
     &.main-container{
       &::before{
@@ -962,6 +1058,7 @@ nav{
 
     h1{
       font-size: 2.5rem;
+      margin-bottom: 0px;
     }
     h2{
       font-size: 2rem;
@@ -985,8 +1082,30 @@ nav{
       margin-right: 16vw;
     }
 
-    
-
   }
-  
+
+
+  .experience-list-container{
+    width: 60vw;
+  }
+
+  .experience-card-main-container{
+    h2{
+      font-size: 2rem;
+    }
+    .position-duration{
+      font-size: 1.3rem;
+    }
+    span{
+      font-size: 1.5rem;
+    }
+    .experience-card-image-container{
+      min-width: 10vw;
+      width: 15vw;
+    }
+  }
+
+  nav button{
+    font-size: 2rem;
+  }
 }

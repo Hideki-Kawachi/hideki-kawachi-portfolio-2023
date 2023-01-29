@@ -95,6 +95,9 @@ function Milaor() {
 							</svg>
 						</motion.div>
 						<h1>Milaor Inventory System</h1>
+						<motion.a whileHover={{ scale: 1.05 }} className="github-link">
+							GitHub Repository
+						</motion.a>
 						<h2>Project Goal:</h2>
 						<p>
 							The main goal of this project was to analyze and identify the

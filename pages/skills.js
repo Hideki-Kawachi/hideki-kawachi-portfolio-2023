@@ -9,7 +9,7 @@ function Skills() {
 			<section id="skills-container" className="main-container">
 				<div className="content-area">
 					<div className="main-text-container">
-						<h2>SKILLS</h2>
+						<h1>SKILLS</h1>
 						<hr></hr>
 						<p>
 							I&rsquo;m primarily focused on full-stack web development using
