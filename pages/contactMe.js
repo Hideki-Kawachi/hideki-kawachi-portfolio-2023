@@ -55,6 +55,20 @@ function ContactMe() {
 								<Image src={"/LI-Logo.png"} fill alt="LinkedIn"></Image>
 							</div>
 						</motion.a>
+						<motion.a
+							href="https://github.com/Hideki-Kawachi"
+							target="_blank"
+							whileHover={{
+								y: -2,
+								scale: 1.02,
+								boxShadow: "4px 4px 20px 10px black",
+							}}
+						>
+							<div className="contact-logo-container" id="github">
+								<Image src={"/GitHub_Logo.png"} fill alt="Github"></Image>
+							</div>
+						</motion.a>
+
 						<motion.button
 							onClick={() => copy()}
 							whileHover={{
