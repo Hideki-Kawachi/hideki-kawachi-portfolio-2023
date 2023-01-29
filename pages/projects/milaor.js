@@ -95,7 +95,11 @@ function Milaor() {
 							</svg>
 						</motion.div>
 						<h1>Milaor Inventory System</h1>
-						<motion.a whileHover={{ scale: 1.05 }} className="github-link">
+						<motion.a
+							whileHover={{ scale: 1.05 }}
+							className="github-link"
+							href="https://github.com/Hideki-Kawachi/itisdev-mp/tree/demo"
+						>
 							GitHub Repository
 						</motion.a>
 						<h2>Project Goal:</h2>

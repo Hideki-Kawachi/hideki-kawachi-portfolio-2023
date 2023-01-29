@@ -89,7 +89,11 @@ function SimplyCookie() {
 							</svg>
 						</motion.div>
 						<h1>Simply Cookie E-Commerce Platform</h1>
-						<motion.a whileHover={{ scale: 1.05 }} className="github-link">
+						<motion.a
+							whileHover={{ scale: 1.05 }}
+							className="github-link"
+							href="https://github.com/Hideki-Kawachi/simply-cookie"
+						>
 							GitHub Repository
 						</motion.a>
 						<h2>Project Goal:</h2>
