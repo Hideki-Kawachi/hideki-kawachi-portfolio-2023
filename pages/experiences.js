@@ -15,19 +15,25 @@ function Experiences() {
 			image: "/lscs.jpg",
 			org: "La Salle Computer Society",
 			duration: "Jan 2021 - Aug 2021",
-			position: "Corporate Relations Committee Executive",
+			position: "Corporate Relations Committee Executive - Hacker Cup 2021",
 		},
 		{
 			image: "/lscs.jpg",
 			org: "La Salle Computer Society",
 			duration: "Jan 2021 - Aug 2021",
-			position: "Programs Committee Executive",
+			position: "Programs Committee Executive - Technology Summit 2021",
 		},
 		{
 			image: "/lscs.jpg",
 			org: "La Salle Computer Society",
 			duration: "Jan 2021 - May 2021",
 			position: "Junior Officer for Socio-Civic Committee",
+		},
+		{
+			image: "/Ley.jpg",
+			org: "LEY La Salle",
+			duration: "Aug 2019 - Dec 2019",
+			position: "Marketing Committee Executive - Business Law Central 2019",
 		},
 	];
 
