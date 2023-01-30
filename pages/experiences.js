@@ -14,6 +14,12 @@ function Experiences() {
 		{
 			image: "/lscs.jpg",
 			org: "La Salle Computer Society",
+			duration: "Aug 2021 - Dec 2021",
+			position: "Junior Officer for Corporate Relations",
+		},
+		{
+			image: "/lscs.jpg",
+			org: "La Salle Computer Society",
 			duration: "Jan 2021 - Aug 2021",
 			position: "Corporate Relations Committee Executive - Hacker Cup 2021",
 		},
