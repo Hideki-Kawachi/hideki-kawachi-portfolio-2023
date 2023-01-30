@@ -248,15 +248,26 @@ nav{
     background-image: radial-gradient(309.9% 80.63% at 87.95% 4.32%, #888888 0%, #141414 21.41%, #616161 77.06%, #3f3f3f 100%);
     height: 100vh;
   }
-  
-  .header-container{
+
+  .main-header-container{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 20px;
     position: relative;
     justify-content: center;
     top: 27vh;
     color: map-get($colors-beige,100);
   }
+
+  .sub-header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: min-content;
+  }
+  
+  
 
   h1{
     font-family: 'Righteous', cursive;
@@ -275,7 +286,7 @@ nav{
   .orb-text-container{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
-    font-weight: 600;
+    font-weight: 500;
     height: min-content;
     width: max-content;
     position: relative;
@@ -1045,11 +1056,13 @@ nav{
 
 @media (min-width: 820px) {
   #start-container{
-    .header-container{
-      top: 22vh;
+    .main-header-container{
+      transform: translatex(-8%);
+      height: 8rem;
       h1{
         font-size: 3rem;
         margin-bottom: 10px;
+        margin-top: 0px;
         text-shadow: -4px 4px 0px rgba(255, 255, 255, 0.25);
       }
       span{
@@ -1060,6 +1073,18 @@ nav{
     span{
       font-size: 1.5rem;
       font-weight: 500;
+    }
+  
+    .sub-header-container{
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      height: min-content;
+    }
+
+    .RHK-logo{
+      height: 100%;
+      width: min-content;
     }
   }
 
