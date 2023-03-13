@@ -14,7 +14,7 @@ function AboutMeFirst() {
 				exit={{ opacity: 0 }}
 				transition={{ delay: 0.25, ease: "easeInOut", duration: 1 }}
 			>
-				FULL STACK WEB DEVELOPMENT
+				SOFTWARE DEVELOPMENT
 			</motion.h1>
 			<p>
 				What I enjoy most about coding is the satisfaction of{" "}
