@@ -110,7 +110,7 @@ function StartPage({ headerSpring, textSpring, isMobile }) {
 					style={{ ...headerSpring }}
 				>
 					<h1>RON HIDEKI L. KAWACHI</h1>
-					<span>Full-Stack Web Developer</span>
+					<span>Software Developer</span>
 				</animated.div>
 			</div>
 

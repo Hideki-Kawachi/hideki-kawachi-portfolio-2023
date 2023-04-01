@@ -32,6 +32,26 @@ export default function Home() {
 		<>
 			<Head>
 				<title>Ron Hideki L. Kawachi Portfolio</title>
+				<link rel="preload" href="/aboutMePic5-comp.jpg" as="image" />
+				<link rel="preload" href="/dlsu1.jpg" as="image" />
+				<link rel="preload" href="/LI-Logo.png" as="image" />
+				<link rel="preload" href="/GitHub_Logo.png" as="image" />
+				<link rel="preload" href="/Gmail_Logo.png" as="image" />
+				<link
+					rel="preload"
+					href="/milaor-inventory-system-landscape.png"
+					as="image"
+				/>
+				<link
+					rel="preload"
+					href="/simply-cookie-preview-landscape.png"
+					as="image"
+				/>
+				<link rel="preload" href="/Gmail_Logo.png" as="image" />
+				<link rel="preload" href="/gdsc.jpg" as="image" />
+				<link rel="preload" href="/lscs.jpg" as="image" />
+				<link rel="preload" href="/Ley.jpg" as="image" />
+				<link rel="preload" href="/viiworks.png" as="image" />
 			</Head>
 			<StartPage
 				headerSpring={headerSpring}
