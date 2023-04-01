@@ -12,7 +12,7 @@ function Skills() {
 						<h1>SKILLS</h1>
 						<hr></hr>
 						<p>
-							I&rsquo;m primarily focused on Software Development using
+							I&rsquo;m primarily focused on Web Development using
 							<strong style={{ color: "#F0DB4F" }}> Javascript </strong>
 							frameworks such as
 							<strong style={{ color: "#61DAFB" }}> React </strong>
