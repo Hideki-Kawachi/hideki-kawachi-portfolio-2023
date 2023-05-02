@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
-function AboutMeGridCard({ target, caption }) {
+function AboutMeGridCard({ target, caption, isDecimal }) {
 	const [targetShow, setTargetShow] = useState(false);
 	const [targetNum, setTargetNum] = useState(0);
 	const [index, setIndex] = useState(0);
@@ -33,7 +33,7 @@ function AboutMeGridCard({ target, caption }) {
 				whileInView={{ opacity: 1 }}
 				initial={{ opacity: 0 }}
 			>
-				{targetNum}
+				{isDecimal ? targetNum.toFixed(2) : targetNum}
 			</motion.span>
 			<span>{caption}</span>
 		</motion.div>
