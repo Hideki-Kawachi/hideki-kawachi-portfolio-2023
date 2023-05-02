@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 
 function AboutMeGridCard({ target, caption, isDecimal }) {
 	const [targetShow, setTargetShow] = useState(false);
-	const [targetNum, setTargetNum] = useState(0);
+	const [targetNum, setTargetNum] = useState(0.0);
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
