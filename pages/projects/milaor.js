@@ -107,19 +107,12 @@ function Milaor() {
 						<p>
 							The main goal of this project was to analyze and identify the
 							present within the client&apos;s internal processes and systems
-							and provide solutions.
+							and provide solutions. The main features of the system is{" "}
+							<b>
+								item flow tracking, vehicle history tracking, and report
+								generation.
+							</b>
 						</p>
-						<h2>Issues Identified:</h2>
-						<ul>
-							<li>
-								Inefficient monitoring system to accurately identify spare part
-								items that are almost out of stock causing unnecessary expenses.
-							</li>
-							<li>
-								Unstandardized recording of item inflow and outflow causes
-								mismatched records in their reports.
-							</li>
-						</ul>
 						<h2>System Features:</h2>
 						<ul>
 							<li>

@@ -720,6 +720,7 @@ nav{
   height: max-content;
   display: flex;
   flex-direction: column;
+  padding-bottom: 5rem;
 
   h2{
     font-family: 'Montserrat', sans-serif;
@@ -819,6 +820,10 @@ nav{
 
     &#milaor{
     background-color: #485D70CC;
+    }
+    
+    &#epawn{
+      background-color: #18273BCC;
     }
 
     &#simply-cookie{
