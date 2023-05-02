@@ -41,7 +41,7 @@ function Milaor() {
 									<path
 										d="M18 2L2 21.5L18 41"
 										stroke="#E4E4E4"
-										stroke-width="4"
+										strokeWidth="4"
 										strokeLinecap="round"
 										strokeLinejoin="round"
 									/>
