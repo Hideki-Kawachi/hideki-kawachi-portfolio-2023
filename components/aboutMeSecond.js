@@ -12,11 +12,11 @@ function AboutMeSecond() {
 			</p>
 			<div className="grid-container">
 				<AboutMeGridCard
-					target={[0, 0.4, 0.9, 1.2, 1.7, 1.9, 2.4, 2.6, 2.97]}
+					target={[0, 0.4, 0.9, 1.2, 1.7, 1.9, 2.4, 2.6, 2.9, 3.0]}
 					caption={"CGPA"}
 				></AboutMeGridCard>
 				<AboutMeGridCard
-					target={[0, 1, 2, 3, 4, 5, 6]}
+					target={[0, 1, 2, 3, 4, 5, 6, 7]}
 					caption={"Time Dean's Lister Awardee"}
 				></AboutMeGridCard>
 			</div>
