@@ -6,16 +6,16 @@ function Experiences() {
 	const delay = 0.4;
 	const experienceList = [
 		{
-			image: "/viiworks.png",
-			org: "ViiWorks Software Solutions",
-			duration: "March 2022 - Present",
-			position: "Software Developer Intern",
-		},
-		{
 			image: "/gdsc.jpg",
 			org: "Google Students Developers Club",
 			duration: "Oct 2022 - Present",
 			position: "Director of Web Development",
+		},
+		{
+			image: "/viiworks.png",
+			org: "ViiWorks Software Solutions",
+			duration: "March 2023 - May 2023",
+			position: "Software Developer Intern",
 		},
 		{
 			image: "/lscs.jpg",
