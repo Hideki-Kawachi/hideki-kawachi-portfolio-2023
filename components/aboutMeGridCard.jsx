@@ -7,7 +7,7 @@ function AboutMeGridCard({ target, caption, isDecimal }) {
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
-		if (targetShow && index != target.length) {
+		if (targetShow && index != target?.length) {
 			setTimeout(() => {
 				setTargetNum(target[index]);
 				setIndex(index + 1);
@@ -21,21 +21,28 @@ function AboutMeGridCard({ target, caption, isDecimal }) {
 			initial={{ opacity: 0, y: -10 }}
 			transition={{ duration: 1.5 }}
 			className="grid-card-container"
+			style={!target && { justifyContent: "center" }}
 		>
-			<motion.span
-				className="highlight-text"
-				onViewportEnter={() => setTargetShow(true)}
-				onViewportLeave={() => {
-					setTargetShow(false);
-					setTargetNum(0);
-					setIndex(0);
-				}}
-				whileInView={{ opacity: 1 }}
-				initial={{ opacity: 0 }}
-			>
-				{isDecimal ? targetNum.toFixed(2) : targetNum}
-			</motion.span>
-			<span>{caption}</span>
+			{target ? (
+				<>
+					<motion.span
+						className="highlight-text"
+						onViewportEnter={() => setTargetShow(true)}
+						onViewportLeave={() => {
+							setTargetShow(false);
+							setTargetNum(0);
+							setIndex(0);
+						}}
+						whileInView={{ opacity: 1 }}
+						initial={{ opacity: 0 }}
+					>
+						{isDecimal ? targetNum.toFixed(2) : targetNum}
+					</motion.span>
+					<span>{caption}</span>
+				</>
+			) : (
+				<span className="highlight-caption">{caption}</span>
+			)}
 		</motion.div>
 	);
 }

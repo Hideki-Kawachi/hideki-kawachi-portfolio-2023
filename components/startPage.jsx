@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { animated, useChain, useSpring, useSpringRef } from "@react-spring/web";
-import Orb from "../components/orb";
+import Orb from "./orb";
 import { Canvas } from "@react-three/fiber";
 
 function StartPage({ headerSpring, textSpring, isMobile }) {

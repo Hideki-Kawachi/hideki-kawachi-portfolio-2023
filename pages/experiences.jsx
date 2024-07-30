@@ -6,16 +6,35 @@ function Experiences() {
 	const delay = 0.4;
 	const experienceList = [
 		{
-			image: "/gdsc.jpg",
-			org: "Google Students Developers Club",
-			duration: "Oct 2022 - Present",
-			position: "Director of Web Development",
+			image: "/lophils.png",
+			org: "LOPhils",
+			duration: "Oct 2022 - Dec 2023",
+			position: "Frontend Developer Intern",
+			bullets: [
+				"Became the top 2 developer with the most tickets resolved in the first month of the internship",
+				"Developed features and refactored code for the company's application",
+				"Assisted the team lead with developing a new dashboard module",
+			],
 		},
 		{
 			image: "/viiworks.png",
 			org: "ViiWorks Software Solutions",
 			duration: "March 2023 - May 2023",
 			position: "Software Developer Intern",
+			bullets: [
+				"Contributed in creating the company's website, Travel Connect",
+				"Implemented reporting modules for the company's content management system",
+			],
+		},
+		{
+			image: "/gdsc.jpg",
+			org: "Google Students Developers Club",
+			duration: "Oct 2022 - Aug 2023",
+			position: "Director of Web Development",
+			bullets: [
+				"Planned events and internal workshops focused on teaching web development",
+				"Led the development and designing of the organization's website",
+			],
 		},
 		{
 			image: "/lscs.jpg",
@@ -64,6 +83,7 @@ function Experiences() {
 								duration={experience.duration}
 								position={experience.position}
 								timing={1.2 + delay * index}
+								bullets={experience?.bullets}
 							></ExperienceCard>
 						))}
 					</div>

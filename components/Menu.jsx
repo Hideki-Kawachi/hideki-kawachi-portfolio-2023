@@ -59,61 +59,71 @@ function Menu({ isOpen, setIsOpen }) {
 					animate="visible"
 					exit="hidden"
 				>
-					<motion.button
-						onClick={() => {
+					<motion.a
+						onClick={(e) => {
+							e.preventDefault();
 							setIsOpen(false);
 							setTimeout(() => router.push("/aboutMe"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 						key={"aboutMe"}
+						href="/aboutMe"
 					>
 						ABOUT ME
-					</motion.button>
-					<motion.button
-						onClick={() => {
+					</motion.a>
+					<motion.a
+						onClick={(e) => {
+							e.preventDefault();
 							setIsOpen(false);
 							setTimeout(() => router.push("/skills"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 						key={"skills"}
+						href="/skills"
 					>
 						SKILLS
-					</motion.button>
-					<motion.button
-						onClick={() => {
+					</motion.a>
+					<motion.a
+						onClick={(e) => {
+							e.preventDefault();
 							setIsOpen(false);
 							setTimeout(() => router.push("/projects"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 						key={"projects"}
+						href="/projects"
 					>
 						PROJECTS
-					</motion.button>
-					<motion.button
-						onClick={() => {
+					</motion.a>
+					<motion.a
+						onClick={(e) => {
+							e.preventDefault();
 							setIsOpen(false);
 							setTimeout(() => router.push("/experiences"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 						key={"experiences"}
+						href="/experiences"
 					>
 						EXPERIENCES
-					</motion.button>
-					<motion.button
-						onClick={() => {
+					</motion.a>
+					<motion.a
+						onClick={(e) => {
+							e.preventDefault();
 							setIsOpen(false);
 							setTimeout(() => router.push("/contactMe"), 900);
 						}}
 						variants={buttonVariant}
 						whileHover={hoverButton}
 						key={"contactMe"}
+						href="/contactMe"
 					>
 						CONTACT ME
-					</motion.button>
+					</motion.a>
 				</motion.nav>
 			)}
 		</AnimatePresence>

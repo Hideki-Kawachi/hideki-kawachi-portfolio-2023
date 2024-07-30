@@ -3,6 +3,7 @@ import Image from "next/image";
 import Menu from "./Menu";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import Logo from "./logo";
 
 function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +13,11 @@ function Header() {
 	return (
 		<>
 			<header>
-				<motion.svg
+				<a style={{ height: "90%", aspectRatio: "1/1" }} href="/">
+					<Logo></Logo>
+				</a>
+
+				{/* <motion.svg
 					width="266"
 					height="180"
 					viewBox="0 0 266 180"
@@ -28,7 +33,7 @@ function Header() {
 						strokeWidth="5"
 						strokeLinecap="round"
 					/>
-				</motion.svg>
+				</motion.svg> */}
 
 				<motion.button
 					initial={{ aspectRatio: 1 / 1 }}

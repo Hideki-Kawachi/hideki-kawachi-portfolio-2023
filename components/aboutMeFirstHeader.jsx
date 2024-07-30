@@ -72,6 +72,7 @@ function AboutMeFirstHeader() {
 					className="header-image"
 					fill
 					priority={true}
+					blurDataURL="/aboutMeFirstHeaderComp.jpg"
 				></Image>
 			</motion.div>
 		</div>

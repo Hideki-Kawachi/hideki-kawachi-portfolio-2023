@@ -19,9 +19,8 @@ function AboutMeFirst() {
 			<p>
 				What I enjoy most about coding is the satisfaction of{" "}
 				<strong style={{ color: "#50A3E2" }}>making ideas come to life</strong>{" "}
-				and the{" "}
-				<strong style={{ color: "#FA8129" }}>problem solving aspect</strong>{" "}
-				that comes with it.
+				and <strong style={{ color: "#FA8129" }}>solving problems</strong> with
+				technology.
 			</p>
 		</motion.div>
 	);

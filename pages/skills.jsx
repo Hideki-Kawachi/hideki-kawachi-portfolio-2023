@@ -21,24 +21,23 @@ function Skills() {
 							while using <strong style={{ color: "#8CC84B" }}>
 								Express
 							</strong>{" "}
-							and Javascript along with databases like
-							<strong style={{ color: "#14A506" }}> mongoDB</strong> ,
+							and <strong style={{ color: "#adadad" }}>Node.js</strong> along
+							with databases like
+							<strong style={{ color: "#14A506" }}> mongoDB</strong> ,{" "}
+							<strong style={{ color: "#FEBA00" }}>Firebase</strong>,
 							<strong style={{ color: "#E38D1A" }}> mySQL</strong>, and{" "}
-							<strong style={{ color: "#FEBA00" }}>Firebase</strong> for the
-							backend. I also have experience developing mobile applications for
-							Android using <strong style={{ color: "#8949FB" }}>Kotlin</strong>{" "}
-							and <strong style={{ color: "#EC2025" }}>Java</strong>. I&rsquo;m
-							comfortable with and have prior experience in working with teams
-							adopting <strong style={{ color: "#FF76AF" }}>agile</strong>{" "}
-							methodologies such as scrum.
+							<strong style={{ color: "#14A506" }}> supabase </strong>
+							for the backend. I also have experience developing mobile
+							applications for Android using{" "}
+							<strong style={{ color: "#8949FB" }}>Kotlin</strong> and{" "}
+							<strong style={{ color: "#EC2025" }}>Java</strong>.<br></br>
 							<br></br>
-							<br></br>
-							Recently, I&rsquo;ve also been studying and trying out new
-							technologies such as <b>Framer Motion</b>, <b>Three.js</b>, and{" "}
-							<b>React Spring</b> for website animations. Along with this, I
-							have experience in using <b>Figma </b>
-							for making prototypes and <b>Lucidchart</b> for creating BPMN 2.0
-							diagrams.
+							I&rsquo;ve also had the opportunity to work with several teams
+							developing and designing projects to solve issues that client
+							companies face. In addition, I was also able to lead the
+							development of some projects, most notably our capstone project
+							which we were nominated for getting an excellence in capstone
+							award.
 						</p>
 					</div>
 					<div className="skills-list-main-container">
@@ -51,7 +50,7 @@ function Skills() {
 								key={1}
 							></SkillsCard>
 							<SkillsCard
-								level={"80%"}
+								level={"90%"}
 								color={"#61DAFB"}
 								caption={"React"}
 								key={2}
@@ -63,43 +62,55 @@ function Skills() {
 								key={3}
 							></SkillsCard>
 							<SkillsCard
-								level={"70%"}
-								color={"#8949FB"}
-								caption={"Kotlin"}
+								level={"85%"}
+								color={"#adadad"}
+								caption={"Node.js"}
 								key={4}
 							></SkillsCard>
 							<SkillsCard
-								level={"70%"}
+								level={"75%"}
+								color={"#8CC84B"}
+								caption={"Express"}
+								key={5}
+							></SkillsCard>
+							<SkillsCard
+								level={"65%"}
+								color={"#8949FB"}
+								caption={"Kotlin"}
+								key={6}
+							></SkillsCard>
+							<SkillsCard
+								level={"65%"}
 								color={"#EC2025"}
 								caption={"Java"}
-								key={5}
+								key={7}
 							></SkillsCard>
 						</div>
 						<div className="skills-list-container">
 							<h3>TOOLS</h3>
 							<SkillsCard
-								level={"75%"}
-								color={"#8CC84B"}
-								caption={"Express"}
-								key={6}
-							></SkillsCard>
-							<SkillsCard
 								level={"85%"}
 								color={"#14A506"}
 								caption={"MongoDB"}
-								key={7}
+								key={8}
 							></SkillsCard>
 							<SkillsCard
-								level={"70%"}
+								level={"83%"}
+								color={"#14A506"}
+								caption={"supabase"}
+								key={9}
+							></SkillsCard>
+							<SkillsCard
+								level={"80%"}
 								color={"#E38D1A"}
 								caption={"MySQL"}
-								key={8}
+								key={10}
 							></SkillsCard>
 							<SkillsCard
 								level={"75%"}
 								color={"#FEBA00"}
 								caption={"Firebase"}
-								key={9}
+								key={11}
 							></SkillsCard>
 						</div>
 					</div>

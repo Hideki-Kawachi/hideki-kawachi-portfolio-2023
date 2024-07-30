@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-function ExperienceCard({ image, org, duration, position, timing }) {
+function ExperienceCard({ image, org, duration, position, timing, bullets }) {
 	return (
 		<motion.div
 			className="experience-card-main-container"
@@ -19,6 +19,18 @@ function ExperienceCard({ image, org, duration, position, timing }) {
 				<span className="position-duration">{duration}</span>
 				<hr></hr>
 				<span>{org}</span>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "column",
+						gap: "5px",
+						marginTop: "5px",
+					}}
+				>
+					{bullets?.map((bullet, index) => (
+						<li key={`${bullet.charAt(0) + index}`}>{bullet}</li>
+					))}
+				</div>
 			</div>
 		</motion.div>
 	);
