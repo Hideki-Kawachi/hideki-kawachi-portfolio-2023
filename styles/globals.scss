@@ -222,11 +222,22 @@ span {
 }
 
 header {
-	background: rgba(12, 12, 12, 1);
+	// solid nav bar
+	// background: rgb(12, 12, 12);
+	// padding: 10px 10px 10px 10px;
+
+	// gradient transparent nav bar
+	background: linear-gradient(
+		rgba(12, 12, 12, 1) 0%,
+		rgba(12, 12, 12, 1) 80%,
+		rgba(26, 26, 26, 0) 100%
+	);
+	padding: 10px 10px 30px 10px;
+
 	width: calc(100% - 20px);
 	height: 5vh;
 	display: flex;
-	padding: 10px;
+
 	position: fixed;
 	z-index: 50;
 	align-items: center;
