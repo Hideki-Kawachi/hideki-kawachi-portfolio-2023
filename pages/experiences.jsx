@@ -11,7 +11,7 @@ function Experiences() {
 			duration: "Oct 2022 - Dec 2023",
 			position: "Frontend Developer Intern",
 			bullets: [
-				"Became the top 2 developer with the most tickets resolved in the first month of the internship",
+				"Became the top 2 developer with the most tickets resolved within first month of the internship",
 				"Developed features and refactored code for the company's application",
 				"Assisted the team lead in developing a new dashboard module",
 			],
