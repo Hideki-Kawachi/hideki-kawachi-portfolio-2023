@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import Link from "next/link";
-import { animate, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import React from "react";
 
 function ProjectCard({ image, title, description, link, bgColor }) {
 	const router = useRouter();

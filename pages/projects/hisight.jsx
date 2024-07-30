@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Router, useRouter } from "next/router";
-import React, { useEffect } from "react";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/header";
 
 function Hisight() {
@@ -88,8 +87,9 @@ function Hisight() {
 							<br></br>
 							<br></br>This integration led to the development of Hisight which
 							enables institutions to comply with the Commission of Higher
-							Education's Outcome Based Education guidelines while facilitating
-							continuous quality improvement through modules such as{" "}
+							Education&apos;s Outcome Based Education guidelines while
+							facilitating continuous quality improvement through modules such
+							as{" "}
 							<b>
 								curriculum development, course development, multi-level
 								analytics, term-end report generation, and program assessment.

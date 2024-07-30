@@ -1,9 +1,9 @@
-import React, { use, useEffect, useState } from "react";
-import Image from "next/image";
-import Menu from "./Menu";
-import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 import Logo from "./logo";
+import Menu from "./Menu";
 
 function Header() {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -13,9 +13,9 @@ function Header() {
 	return (
 		<>
 			<header>
-				<a style={{ height: "90%", aspectRatio: "1/1" }} href="/">
+				<Link style={{ height: "90%", aspectRatio: "1/1" }} href="/">
 					<Logo></Logo>
-				</a>
+				</Link>
 
 				{/* <motion.svg
 					width="266"

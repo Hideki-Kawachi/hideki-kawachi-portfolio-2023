@@ -1,9 +1,8 @@
+import { useSpring } from "@react-spring/web";
 import Head from "next/head";
-import { useEffect, useRef, useState } from "react";
-import React from "react";
-import { animated, useSpring, useScroll } from "@react-spring/web";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import StartPage from "../components/startPage";
-import { Router, useRouter } from "next/router";
 
 export default function Home() {
 	const headerSpring = useSpring({

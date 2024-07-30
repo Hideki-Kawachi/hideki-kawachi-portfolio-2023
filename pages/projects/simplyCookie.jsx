@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Router, useRouter } from "next/router";
-import React, { useEffect } from "react";
-import { useState } from "react";
+import { useRouter } from "next/router";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/header";
 
 function SimplyCookie() {
