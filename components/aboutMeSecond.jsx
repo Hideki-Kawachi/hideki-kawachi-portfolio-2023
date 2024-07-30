@@ -12,7 +12,7 @@ function AboutMeSecond() {
 			</p>
 			<div className="grid-container">
 				<AboutMeGridCard
-					caption={"Nominated for Excellence in Capstone Awward"}
+					caption={"Nominated for Excellence in Capstone Award"}
 				></AboutMeGridCard>
 				<AboutMeGridCard
 					caption={"DLSU Research Congress 2024 Participant"}
