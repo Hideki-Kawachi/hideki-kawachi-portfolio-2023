@@ -5,8 +5,8 @@ function AboutMeFirst() {
 	return (
 		<motion.div className="about-me-first-container">
 			<p>
-				I&apos;m <b>Hideki</b>, an Information Systems student who is passionate
-				on...
+				I&apos;m <b>Hideki</b>, an information systems graduate who is
+				passionate on...
 			</p>
 			<motion.h1
 				initial={{ opacity: 0 }}
