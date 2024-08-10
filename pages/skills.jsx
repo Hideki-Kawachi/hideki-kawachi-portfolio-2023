@@ -27,11 +27,11 @@ function Skills() {
 							<strong style={{ color: "#FEBA00" }}>Firebase</strong>,
 							<strong style={{ color: "#E38D1A" }}> mySQL</strong>, and{" "}
 							<strong style={{ color: "#14A506" }}> supabase </strong>
-							for the backend. Additionally, I've also had experience doing
+							for the backend. Additionally, I&apos;ve also had experience doing
 							small projects using{" "}
 							<strong style={{ color: "#EC2025" }}>Java</strong>,{" "}
-							<strong style={{ color: "#73B648" }}> Spring Boot.</strong> I've
-							also developed mobile applications for Android using{" "}
+							<strong style={{ color: "#73B648" }}> Spring Boot.</strong>{" "}
+							I&apos;ve also developed mobile applications for Android using{" "}
 							<strong style={{ color: "#8949FB" }}>Kotlin</strong>.<br></br>
 							<br></br>
 							I&rsquo;ve also had the opportunity to work with several teams
