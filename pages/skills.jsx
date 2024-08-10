@@ -27,10 +27,12 @@ function Skills() {
 							<strong style={{ color: "#FEBA00" }}>Firebase</strong>,
 							<strong style={{ color: "#E38D1A" }}> mySQL</strong>, and{" "}
 							<strong style={{ color: "#14A506" }}> supabase </strong>
-							for the backend. I also have experience developing mobile
-							applications for Android using{" "}
-							<strong style={{ color: "#8949FB" }}>Kotlin</strong> and{" "}
-							<strong style={{ color: "#EC2025" }}>Java</strong>.<br></br>
+							for the backend. Additionally, I've also had experience doing
+							small projects using{" "}
+							<strong style={{ color: "#EC2025" }}>Java</strong>,{" "}
+							<strong style={{ color: "#73B648" }}> Spring Boot.</strong> I've
+							also developed mobile applications for Android using{" "}
+							<strong style={{ color: "#8949FB" }}>Kotlin</strong>.<br></br>
 							<br></br>
 							I&rsquo;ve also had the opportunity to work with several teams
 							developing and designing projects to solve issues that client
@@ -74,7 +76,7 @@ function Skills() {
 								key={5}
 							></SkillsCard>
 							<SkillsCard
-								level={"65%"}
+								level={"50%"}
 								color={"#8949FB"}
 								caption={"Kotlin"}
 								key={6}
@@ -84,6 +86,12 @@ function Skills() {
 								color={"#EC2025"}
 								caption={"Java"}
 								key={7}
+							></SkillsCard>
+							<SkillsCard
+								level={"65%"}
+								color={"#73B648"}
+								caption={"Spring Boot"}
+								key={8}
 							></SkillsCard>
 						</div>
 						<div className="skills-list-container">
