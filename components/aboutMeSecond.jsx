@@ -18,7 +18,9 @@ function AboutMeSecond() {
 					caption={"DLSU Research Congress 2024 Participant"}
 				></AboutMeGridCard>
 				<AboutMeGridCard
-					target={[0, 0.4, 0.9, 1.2, 1.7, 1.9, 2.4, 2.6, 2.9, 3.0, 3.1, 3.15]}
+					target={[
+						0, 0.4, 0.9, 1.2, 1.7, 1.9, 2.4, 2.6, 2.9, 3.0, 3.1, 3.15, 3.19,
+					]}
 					caption={"CGPA"}
 					isDecimal={true}
 				></AboutMeGridCard>
