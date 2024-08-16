@@ -80,7 +80,7 @@ function Hisight() {
 						<p>
 							This project was made to identify and solve the current issues
 							being experienced by higher education institutions with regards to
-							outcome based education. To accomodate a wide range of colleges
+							outcome based education. To accommodate a wide range of colleges
 							and universities, the developers focused on
 							<b> integrating with Canvas LMS</b>, one of the most prominent
 							learning management systems available.
